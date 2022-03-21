@@ -220,16 +220,10 @@ void BFSGraph( int argc, char** argv)
 		h2d_time += tv.tv_sec * 1000.0 + (float) tv.tv_usec / 1000.0;
 #endif
 
-		// Kernel<<< grid, threads, 0 >>>( d_graph_nodes, d_graph_edges, d_graph_mask, d_updating_graph_mask, d_graph_visited, d_cost, no_of_nodes);
-		void* args[] = {&d_graph_nodes, &d_graph_edges, &d_graph_mask, &d_updating_graph_mask, &d_graph_visited, &d_cost, &no_of_nodes};
-		cudaLaunchKernel((void*) &Kernel, grid , threads, args, 0, NULL);
-
+		Kernel<<< grid, threads, 0 >>>( d_graph_nodes, d_graph_edges, d_graph_mask, d_updating_graph_mask, d_graph_visited, d_cost, no_of_nodes);
 		// check if kernel execution generated and error
 
-		// Kernel2<<< grid, threads, 0 >>>( d_graph_mask, d_updating_graph_mask, d_graph_visited, d_over, no_of_nodes);
-		void* args2[] = {&d_graph_mask, &d_updating_graph_mask, &d_graph_visited, &d_over, &no_of_nodes};
-		cudaLaunchKernel((void*) &Kernel2, grid , threads, args, 0, NULL);
-
+		Kernel2<<< grid, threads, 0 >>>( d_graph_mask, d_updating_graph_mask, d_graph_visited, d_over, no_of_nodes);
 		// check if kernel execution generated and error
 
 #ifdef  TIMING

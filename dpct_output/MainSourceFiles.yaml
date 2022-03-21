@@ -1,7 +1,7 @@
 ---
 MainSourceFile:  MainSrcFiles_placehold
 Replacements:
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          852
     Length:          0
     ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
@@ -10,7 +10,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          929
     Length:          18
     ReplacementText: ''
@@ -19,7 +19,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          1600
     Length:          20
     ReplacementText: '#include "kernel.dp.cpp"'
@@ -28,7 +28,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          1621
     Length:          21
     ReplacementText: '#include "kernel2.dp.cpp"'
@@ -37,7 +37,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          2286
     Length:          0
     ReplacementText: "\n dpct::device_ext &dev_ct1 = dpct::get_current_device();\n sycl::queue &q_ct1 = dev_ct1.default_queue();"
@@ -46,7 +46,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4126
     Length:          62
     ReplacementText: 'd_graph_nodes = sycl::malloc_device<Node>(no_of_nodes, q_ct1)'
@@ -55,7 +55,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4192
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -64,7 +64,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4258
     Length:          24
     ReplacementText: ''
@@ -73,7 +73,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4283
     Length:          0
     ReplacementText: '.wait()'
@@ -82,7 +82,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4348
     Length:          64
     ReplacementText: 'd_graph_edges = sycl::malloc_device<int>(edge_list_size, q_ct1)'
@@ -91,7 +91,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4416
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -100,7 +100,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4484
     Length:          24
     ReplacementText: ''
@@ -109,7 +109,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4509
     Length:          0
     ReplacementText: '.wait()'
@@ -118,7 +118,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4569
     Length:          61
     ReplacementText: 'd_graph_mask = sycl::malloc_device<bool>(no_of_nodes, q_ct1)'
@@ -127,7 +127,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4634
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -136,7 +136,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4698
     Length:          24
     ReplacementText: ''
@@ -145,7 +145,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4723
     Length:          0
     ReplacementText: '.wait()'
@@ -154,7 +154,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4758
     Length:          70
     ReplacementText: 'd_updating_graph_mask = sycl::malloc_device<bool>(no_of_nodes, q_ct1)'
@@ -163,7 +163,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4832
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -172,7 +172,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4914
     Length:          24
     ReplacementText: ''
@@ -181,7 +181,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          4939
     Length:          0
     ReplacementText: '.wait()'
@@ -190,7 +190,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5017
     Length:          64
     ReplacementText: 'd_graph_visited = sycl::malloc_device<bool>(no_of_nodes, q_ct1)'
@@ -199,7 +199,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5085
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -208,7 +208,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5155
     Length:          24
     ReplacementText: ''
@@ -217,7 +217,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5180
     Length:          0
     ReplacementText: '.wait()'
@@ -226,7 +226,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5407
     Length:          54
     ReplacementText: 'd_cost = sycl::malloc_device<int>(no_of_nodes, q_ct1)'
@@ -235,7 +235,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5464
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -244,7 +244,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5515
     Length:          24
     ReplacementText: ''
@@ -253,7 +253,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5540
     Length:          0
     ReplacementText: '.wait()'
@@ -262,7 +262,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5609
     Length:          43
     ReplacementText: 'd_over = sycl::malloc_device<bool>(1, q_ct1)'
@@ -271,7 +271,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5916
     Length:          4
     ReplacementText: 'sycl::range<3>'
@@ -280,7 +280,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5927
     Length:          20
     ReplacementText: 1, 1, num_of_blocks
@@ -289,7 +289,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5951
     Length:          4
     ReplacementText: 'sycl::range<3>'
@@ -298,7 +298,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          5965
     Length:          31
     ReplacementText: 1, 1, num_of_threads_per_block
@@ -307,7 +307,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          6269
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -316,7 +316,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          6308
     Length:          24
     ReplacementText: ''
@@ -325,7 +325,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          6333
     Length:          0
     ReplacementText: '.wait()'
@@ -334,7 +334,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          6774
     Length:          0
     ReplacementText: "\t\t/*\n\t\tDPCT1049:0: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t\t*/\n"
@@ -343,7 +343,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          6776
     Length:          64
     ReplacementText: "q_ct1.submit(\n\t\t  [&](sycl::handler &cgh) {\n\t\t    auto g_graph_nodes_ct0 = *(Node **)args[0];\n\t\t    auto g_graph_edges_ct1 = *(int **)args[1];\n\t\t    auto g_graph_mask_ct2 = *(bool **)args[2];\n\t\t    auto g_updating_graph_mask_ct3 = *(bool **)args[3];\n\t\t    auto g_graph_visited_ct4 = *(bool **)args[4];\n\t\t    auto g_cost_ct5 = *(int **)args[5];\n\t\t    auto no_of_nodes_ct6 = *(int *)args[6];\n\n\t\t    cgh.parallel_for(\n\t\t      sycl::nd_range<3>(grid * threads, threads), \n\t\t      [=](sycl::nd_item<3> item_ct1) {\n\t\t        Kernel(g_graph_nodes_ct0, g_graph_edges_ct1, g_graph_mask_ct2, g_updating_graph_mask_ct3, g_graph_visited_ct4, g_cost_ct5, no_of_nodes_ct6, item_ct1);\n\t\t      });\n\t\t  });"
@@ -352,7 +352,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: true
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          6840
     Length:          1
     ReplacementText: ''
@@ -361,7 +361,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7109
     Length:          0
     ReplacementText: "\t\t/*\n\t\tDPCT1049:1: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t\t*/\n"
@@ -370,7 +370,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7111
     Length:          65
     ReplacementText: "q_ct1.submit(\n\t\t  [&](sycl::handler &cgh) {\n\t\t    auto g_graph_mask_ct0 = *(bool **)args[0];\n\t\t    auto g_updating_graph_mask_ct1 = *(bool **)args[1];\n\t\t    auto g_graph_visited_ct2 = *(bool **)args[2];\n\t\t    auto g_over_ct3 = *(bool **)args[3];\n\t\t    auto no_of_nodes_ct4 = *(int *)args[4];\n\n\t\t    cgh.parallel_for(\n\t\t      sycl::nd_range<3>(grid * threads, threads), \n\t\t      [=](sycl::nd_item<3> item_ct1) {\n\t\t        Kernel2(g_graph_mask_ct0, g_updating_graph_mask_ct1, g_graph_visited_ct2, g_over_ct3, no_of_nodes_ct4, item_ct1);\n\t\t      });\n\t\t  });"
@@ -379,7 +379,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: true
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7176
     Length:          1
     ReplacementText: ''
@@ -388,7 +388,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7431
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -397,7 +397,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7470
     Length:          24
     ReplacementText: ''
@@ -406,7 +406,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7495
     Length:          0
     ReplacementText: '.wait()'
@@ -415,7 +415,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7826
     Length:          10
     ReplacementText: q_ct1.memcpy
@@ -424,7 +424,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7877
     Length:          24
     ReplacementText: ''
@@ -433,7 +433,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          7902
     Length:          0
     ReplacementText: '.wait()'
@@ -442,7 +442,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          8493
     Length:          23
     ReplacementText: 'sycl::free(d_graph_nodes, q_ct1)'
@@ -451,7 +451,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          8519
     Length:          23
     ReplacementText: 'sycl::free(d_graph_edges, q_ct1)'
@@ -460,7 +460,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          8545
     Length:          22
     ReplacementText: 'sycl::free(d_graph_mask, q_ct1)'
@@ -469,7 +469,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          8570
     Length:          31
     ReplacementText: 'sycl::free(d_updating_graph_mask, q_ct1)'
@@ -478,7 +478,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          8604
     Length:          25
     ReplacementText: 'sycl::free(d_graph_visited, q_ct1)'
@@ -487,7 +487,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Offset:          8632
     Length:          16
     ReplacementText: 'sycl::free(d_cost, q_ct1)'
@@ -496,7 +496,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel.cu'
     Offset:          0
     Length:          0
     ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
@@ -505,8 +505,8 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel.cu'
-    Offset:          941
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel.cu'
+    Offset:          1032
     Length:          11
     ReplacementText: ''
     ConstantFlag:    ''
@@ -514,17 +514,17 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel.cu'
-    Offset:          1107
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel.cu'
+    Offset:          1197
     Length:          0
-    ReplacementText: ",\n        sycl::nd_item<3> item_ct1"
+    ReplacementText: ",\n       sycl::nd_item<3> item_ct1"
     ConstantFlag:    ''
     ConstantOffset:  0
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel.cu'
-    Offset:          1125
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel.cu'
+    Offset:          1215
     Length:          10
     ReplacementText: 'item_ct1.get_group(2)'
     ConstantFlag:    ''
@@ -532,8 +532,8 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel.cu'
-    Offset:          1142
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel.cu'
+    Offset:          1250
     Length:          11
     ReplacementText: 'item_ct1.get_local_id(2)'
     ConstantFlag:    ''
@@ -541,7 +541,7 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel2.cu'
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel2.cu'
     Offset:          0
     Length:          0
     ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
@@ -550,8 +550,8 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel2.cu'
-    Offset:          923
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel2.cu'
+    Offset:          958
     Length:          11
     ReplacementText: ''
     ConstantFlag:    ''
@@ -559,8 +559,8 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel2.cu'
-    Offset:          1049
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel2.cu'
+    Offset:          1084
     Length:          0
     ReplacementText: ",\n         sycl::nd_item<3> item_ct1"
     ConstantFlag:    ''
@@ -568,8 +568,8 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel2.cu'
-    Offset:          1064
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel2.cu'
+    Offset:          1099
     Length:          10
     ReplacementText: 'item_ct1.get_group(2)'
     ConstantFlag:    ''
@@ -577,8 +577,8 @@ Replacements:
     InitStr:         ''
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
-  - FilePath:        '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel2.cu'
-    Offset:          1081
+  - FilePath:        '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel2.cu'
+    Offset:          1134
     Length:          11
     ReplacementText: 'item_ct1.get_local_id(2)'
     ConstantFlag:    ''
@@ -587,12 +587,12 @@ Replacements:
     NewHostVarName:  ''
     BlockLevelFormatFlag: false
 MainSourceFilesDigest:
-  - MainSourceFile:  '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+  - MainSourceFile:  '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
     Digest:          b6343d41ef222dbee577340e7c3b44ab
-  - MainSourceFile:  '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel.cu'
-    Digest:          9a1dbdbd7fc412c7a56f5ba70708f82e
-  - MainSourceFile:  '/home/bgarg6/gpu-rodinia/cuda/bfs/kernel2.cu'
-    Digest:          ceda18252cacfe4716a5e28fc2f55805
+  - MainSourceFile:  '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel.cu'
+    Digest:          d80777a2414c453b41ef267f5750a891
+  - MainSourceFile:  '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/kernel2.cu'
+    Digest:          bce908bcbbde77627dd764b5b3100419
 DpctVersion:     2022.0.0
 MainHelperFileName: dpct
 USMLevel:        ''
@@ -601,97 +601,97 @@ FeatureMap:
     dev_mgr:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dev_mgr
       SubFeatureMap:
         dev_mgr_1:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     dev_mgr
           SubFeatureMap:   {}
         dev_mgr_2:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     dev_mgr
           SubFeatureMap:   {}
         dev_mgr_3:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     dev_mgr
           SubFeatureMap:   {}
         dev_mgr_4:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     dev_mgr
           SubFeatureMap:   {}
         dev_mgr_check_id:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'dev_mgr::check_id'
           SubFeatureMap:   {}
         dev_mgr_current_device:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'dev_mgr::current_device'
           SubFeatureMap:   {}
         dev_mgr_current_device_id:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'dev_mgr::current_device_id'
           SubFeatureMap:   {}
     device_ext:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     device_ext
       SubFeatureMap:
         device_ext_1:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     device_ext
           SubFeatureMap:   {}
         device_ext_2:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     device_ext
           SubFeatureMap:   {}
         device_ext_default_queue:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'device_ext::default_queue'
           SubFeatureMap:   {}
     exception_handler:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     exception_handler
       SubFeatureMap:   {}
     get_current_device:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     get_current_device
       SubFeatureMap:   {}
     get_default_queue:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     get_default_queue
       SubFeatureMap:   {}
     get_tid:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     get_tid
       SubFeatureMap:   {}
   dpct.hpp:
@@ -705,127 +705,127 @@ FeatureMap:
     dpct_memcpy:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dpct_memcpy
       SubFeatureMap:   {}
     dpct_memcpy_2d:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dpct_memcpy
       SubFeatureMap:   {}
     dpct_memcpy_2d_3d_pitch_detail:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dpct_memcpy
       SubFeatureMap:   {}
     dpct_memcpy_2d_pitch_detail:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dpct_memcpy
       SubFeatureMap:   {}
     dpct_memcpy_3d:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dpct_memcpy
       SubFeatureMap:   {}
     dpct_memcpy_3d_detail:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dpct_memcpy
       SubFeatureMap:   {}
     dpct_memcpy_detail:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     dpct_memcpy
       SubFeatureMap:   {}
     mem_mgr:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     mem_mgr
       SubFeatureMap:
         mem_mgr_1:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     mem_mgr
           SubFeatureMap:   {}
         mem_mgr_2:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     mem_mgr
           SubFeatureMap:   {}
         mem_mgr_get_map_iterator:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'mem_mgr::get_map_iterator'
           SubFeatureMap:   {}
         mem_mgr_is_device_ptr:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'mem_mgr::is_device_ptr'
           SubFeatureMap:   {}
         mem_mgr_translate_ptr:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'mem_mgr::translate_ptr'
           SubFeatureMap:   {}
     memcpy_direction:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     memcpy_direction
       SubFeatureMap:   {}
     pitched_data:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     pitched_data
       SubFeatureMap:
         pitched_data_get_data_ptr:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'pitched_data::get_data_ptr'
           SubFeatureMap:   {}
         pitched_data_get_pitch:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'pitched_data::get_pitch'
           SubFeatureMap:   {}
         pitched_data_get_y:
           IsCalled:        true
           CallerSrcFiles:
-            - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+            - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
           FeatureName:     'pitched_data::get_y'
           SubFeatureMap:   {}
     pitched_data_1:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     pitched_data
       SubFeatureMap:   {}
     typedef_buffer_t:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     buffer_t
       SubFeatureMap:   {}
     typedef_byte_t:
       IsCalled:        true
       CallerSrcFiles:
-        - '/home/bgarg6/gpu-rodinia/cuda/bfs/bfs.cu'
+        - '/home/bgarg6/jun_gpu_rodinia/cuda/bfs/bfs.cu'
       FeatureName:     byte_t
       SubFeatureMap:   {}
 CompileTargets:  {}
